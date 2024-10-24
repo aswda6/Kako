@@ -1,16 +1,26 @@
-<!-- modify this form HTML and place wherever you want your form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h2>Contact Us</h2>
 <form
   action="https://formspree.io/f/xbljlway"
   method="POST"
+  enctype="multipart/form-data"
 >
   <label>
     Your email:
     <input type="email" name="email">
   </label>
   <label>
-    Your message:
-    <textarea name="message"></textarea>
+    Your file:
+    <input type="file" name="upload">
   </label>
-  <!-- your other form fields go here -->
   <button type="submit">Send</button>
 </form>
+</body>
+</html>
